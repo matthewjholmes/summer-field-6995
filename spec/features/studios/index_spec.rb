@@ -30,6 +30,7 @@ RSpec.describe 'studio index' do
   end
 
   it 'underneath each studio i see title of all its movies' do
+  
     within("#studio-#{@studio1.id}") do
       expect(page).to have_content(@movie1.title)
       expect(page).to have_content(@movie2.title)
